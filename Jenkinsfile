@@ -12,8 +12,8 @@ pipeline {
 
         stage('Build Docker Images') {
             steps {
-                sh 'docker build -t $IMAGE_NODE ./node-app'
-                sh 'docker build -t $IMAGE_NGINX ./nginx'
+                sh 'docker build -t $IMAGE_NODE .'
+                sh 'docker build -t $IMAGE_NGINX .'
             }
         }
 
